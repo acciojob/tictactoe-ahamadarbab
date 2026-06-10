@@ -8,7 +8,7 @@ const cells = document.querySelectorAll(".cell");
 let player1 = "";
 let player2 = "";
 let currentPlayer = "";
-let currentSymbol = "X";
+let currentSymbol = "x";
 let board = Array(9).fill("");
 
 const winPatterns = [
@@ -32,7 +32,7 @@ submitBtn.addEventListener("click", () => {
 	game.style.display = "block";
 
 	currentPlayer = player1;
-	currentSymbol = "X";
+	currentSymbol = "x";
 
 	message.textContent = `${currentPlayer}, you're up`;
 });
@@ -61,11 +61,11 @@ cells.forEach((cell, index) => {
             return;
         }
 
-        if (currentSymbol === "X") {
-            currentSymbol = "O";
+        if (currentSymbol === "x") {
+            currentSymbol = "o";
             currentPlayer = player2;
         } else {
-            currentSymbol = "X";
+            currentSymbol = "x";
             currentPlayer = player1;
         }
 
