@@ -1,1 +1,33 @@
 /*  your css code here. If applicable */
+.container  {
+	text-align: center;
+}
+
+.board {
+	width: 450px;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.cell {
+	height: 150px;
+	border: 1px solid black;
+	background: #f3c2cf;
+	font-size: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.message {
+	font-size: 32px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.winner {
+	background: purple;
+	color: black;
+}
